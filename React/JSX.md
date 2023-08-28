@@ -1,0 +1,32 @@
+<h1>JSX</h1>
+
+<h2>JSX</h2>
+<div>
+  <h4 style="margin: 0; padding: 10px; background: gray; border-radius: 10px; width: 90%; height: 30px;display: flex; justify-content: center; align-items: center;">
+  <b>JavaScript XML의 약어이며, 자바스크립트에 XML을 추가한 확장 문법</b></h4> <br />
+  리액트로 프로젝트를 개발할 떄 사용되기 때문에, 공식적인 JS 문법은 아니다. <br />
+  브라우저에 실행되기 전, <b>바벨</b>이라는 컴파일러를 통해 JS로 변환된 후 실행된다.
+</div>
+
+<h2>JSX의 규칙</h2>
+<div>
+  <ul>
+    <li>반드시 부모 요소 하나가 감싸는 형태여야만 한다</li>
+    <li>JS의 표현(정수, 코드 등)을 넣으려면 중괄호({})로 감싸야만 한다</li>
+    <li>IF문 대신 삼항 연산자를 사용해야 한다. <br /> 
+    애초에 IF문은 표현식이 아니기에, JSX에선 사용할 수 없다.</li>
+    <li>인라인 스타일 적용 시 camelCase를 적용해야 한다.</li>
+</div>
+
+<h2>JSX vs JS</h2>
+<div>
+  JSX는 실행시 Babel에 의해 JS로 변환되어 출력되기 때문에 큰 차이는 없다. <br />
+  다만 코드를 작성하며 JS파일 내부에서 UI 제작을 할 수 있으며, 오류 메세지 출력이 좀 더 상세해 진다는 것이 장점이다.
+</div>
+
+<h2>Babel</h2>
+<div>
+  아까부터 계속 나왔던 Babel은 자바스크립트 컴파일러로, 아직까지 지원되지 않는 비공식 JS 문법을 JS로 변환하는 데 사용된다 <br />
+  보통 리액트에서 쓰이는 JSX 문법을 변환하는 데 많이 쓰인다. <br />
+  다만 Babel만 쓰는 경우보단 Polyfill과 같이 쓰이는데, ES6중 Promise와 같은, ES5에서 사용할 수 없는 코드들을 변환하는 데 쓰인다.
+</div>
