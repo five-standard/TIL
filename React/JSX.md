@@ -2,8 +2,7 @@
 
 <h2>JSX</h2>
 <div>
-  <h4 style="margin: 0; padding: 10px; background: gray; border-radius: 10px; width: 90%; height: 30px;display: flex; justify-content: center; align-items: center;">
-  <b>JavaScript XML의 약어이며, 자바스크립트에 XML을 추가한 확장 문법</b></h4> <br />
+  <h4>JavaScript XML의 약어이며, 자바스크립트에 XML을 추가한 확장 문법</h4>
   리액트로 프로젝트를 개발할 떄 사용되기 때문에, 공식적인 JS 문법은 아니다. <br />
   브라우저에 실행되기 전, <b>바벨</b>이라는 컴파일러를 통해 JS로 변환된 후 실행된다.
 </div>
