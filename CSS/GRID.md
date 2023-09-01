@@ -78,3 +78,7 @@
   - **z-index**  
     Z축 정렬을 해 주는 속성이다.  
     수가 클 수록 위로 올라온다.
+
+## Grid 연습 사이트
+  https://cssgridgarden.com/#ko  
+  해당 페이지에서 **grid 속성들**을 사용해 볼 수 있다.
