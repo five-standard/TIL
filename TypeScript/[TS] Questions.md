@@ -1,4 +1,4 @@
-# TypeScript - 면접 질문 모음
+# Questions
    - ### TypeScript는 무엇인가요?
    - ### TypeScript를 사용하는 이유는 무엇인가요?
    - ### TypeScript를 사용했을 때 어떤 문제점이 생길 수 있을까요?
