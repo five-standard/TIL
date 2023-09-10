@@ -1,5 +1,5 @@
 # Flex와 드롭다운
-  ## 적게 된 이유
+  ## 문제 상황
   과제를 위해 헤더와 드롭다운을 만들어야 하는 일이 있었다.
 
   ![](https://media.discordapp.net/attachments/1089767490537656340/1150130211883585546/image-1.png?width=720&height=118)
@@ -9,7 +9,7 @@
   ![](https://media.discordapp.net/attachments/1089767490537656340/1150130212164599849/image-2.png?width=720&height=79)
   **~~?~~**
 
-  ## 발생하는 원인
+  ## 발생 원인
   이유는 단순하다. **FlexBox의 align-items 속성 때문이다.**  
   보통 `align-items: center`라고 작성하면 아이템들이 **수직으로 중앙정렬**된다.  
   <img src="https://css-tricks.com/wp-content/uploads/2019/10/flex-align.svg" width="250">  
