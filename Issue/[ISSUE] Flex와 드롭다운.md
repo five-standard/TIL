@@ -1,15 +1,15 @@
 # Flex와 드롭다운
-  ## 적게 된 이유
+  ## 문제 상황
   과제를 위해 헤더와 드롭다운을 만들어야 하는 일이 있었다.
 
-  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130211883585546/image-1.png?width=720&height=118)
+  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130211883585546/image-1.png?width=720&height=118)  
   원래는 이런 드롭다운을 만드는 것이 원래 목적이였다.  
   하지만 제작해보니 **뭔가 잘못된 드롭다운**이 나왔다
   
-  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130212164599849/image-2.png?width=720&height=79)
+  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130212164599849/image-2.png?width=720&height=79)  
   **~~?~~**
 
-  ## 발생하는 원인
+  ## 발생 원인
   이유는 단순하다. **FlexBox의 align-items 속성 때문이다.**  
   보통 `align-items: center`라고 작성하면 아이템들이 **수직으로 중앙정렬**된다.  
   <img src="https://css-tricks.com/wp-content/uploads/2019/10/flex-align.svg" width="250">  
@@ -22,7 +22,7 @@
   속성에 `position: absolute(relative, fixed도 가능)`를 추가하면 해결된다.
   
   이 속성을 적용하면, 원리까진 모르겠으나 두 항목이 서로 분리되어 아래와 같이 출력된다. 
-  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130211883585546/image-1.png?width=720&height=118)
+  ![](https://media.discordapp.net/attachments/1089767490537656340/1150130211883585546/image-1.png?width=720&height=118)  
 
   아마 Position의 위치 설정과 Flex의 정렬 설정이 합쳐져 다음 줄로 정렬되는 것은 아닐까 싶다.
 
