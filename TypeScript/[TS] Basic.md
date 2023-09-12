@@ -33,35 +33,4 @@
     let result2 = buildName("Bob", "Adams", "Sr."); //Compile Error
     let result3 = buildName("Bob", "Adams"); //Bob Adams
    ```
-
-  ## Interface
-   Interface란 자주 사용하는 타입들을 **object 형태의 묶음**으로 정의해 새로운 타입을 만드는 기능이다.
-
-   - **선언**
-   ```
-    interface User {
-      age: number;
-      name: string;
-    }
-   ```
-
-  - **변수 활용** - `const jinyoung: User = { name: "jinyoung", age: 24 }`
-
-   - **확장**
-   ```
-    interface Person {
-      name: string;
-      age: number;
-    }
-
-    interface Developer extends Person {
-      position: string;
-    } //똑같은 값들을 칠 필요 없이 특정 값이 추가된 interface를 만들 수 있다.
-
-    const jinyoung: Developer = {
-      name: "jinyoung",
-      age: 24,
-      position: "FE"
-    };
-   ```
    
