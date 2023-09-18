@@ -2,7 +2,7 @@
   > **한 쪽 끝에서만 자료를 넣고 뺄 수 있는 LIFO(Last In First Out) 형식의 자료 구조**
 
   Stack은 위 설명처럼 **한쪽에서만 자료를 넣고 뺄 수 있는 LIFO 형식**의 자료 구조이다.
-  팬케이크 탑을 떠올려보면 이해가 쉽다. **(팬케이크는 보통 위에 쌓고, 위 것을 먹지 않는가?)** 
+  팬케이크 탑을 떠올려보면 이해가 쉽다. **(팬케이크는 보통 위에 쌓고, 위 것을 먹지 않는가?)**  
   ![](https://i.namu.wiki/i/sonbaPfQD9CKqe0nOHHEd2CW-w-it6pyjWq-iQlDsGQHj47gQRBRPBn8Bl_42R9bYPBPKdWBtGXkAXNkqNfVYg.webp)  
 
   ## Stack의 연산
