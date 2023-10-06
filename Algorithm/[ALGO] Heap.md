@@ -8,7 +8,7 @@
   - **최대 힙** - 부모 노드의 키 값이 자식 노드의 키 값보다 크거나 같은 완전 이진 트리  
   - **최소 힙** - 부모 노드의 키 값이 자식 노드의 키 값보다 작거나 같은 완전 이진 트리  
   ![](https://media.discordapp.net/attachments/1089767490537656340/1156222671638511707/ea61de672e9194d3.png?ex=65142fc6&is=6512de46&hm=27c28964ec13ca490262534d159e1fa68feedbfd8a9eabc6976061f82d80d205&=&width=1440&height=574)
-    <span style="color: gray; font-weight: bolder">힙의 형태. 최대 힙과 최소 힙이 있다</span>
+  (힙의 형태. 최대 힙과 최소 힙이 있다)
 
   ## Heap의 연산
   - **insert()** - Heap에 새로운 노드를 삽입한다.

@@ -4,7 +4,7 @@
   Stack은 위 설명처럼 **한쪽에서만 자료를 넣고 뺄 수 있는 LIFO 형식**의 자료 구조이다.  
   팬케이크 탑을 떠올려보면 이해가 쉽다.
   ![](https://i.namu.wiki/i/sonbaPfQD9CKqe0nOHHEd2CW-w-it6pyjWq-iQlDsGQHj47gQRBRPBn8Bl_42R9bYPBPKdWBtGXkAXNkqNfVYg.webp)  
-  <span style="color: gray; font-weight: bolder">팬케이크는 보통 위 것부터 먹는다</span>
+  (팬케이크는 보통 위 것부터 먹는다)
 
   ## Stack의 연산
   **size() -** 현재 스택에 들어 있는 데이터 원소 개수를 반환한다.  

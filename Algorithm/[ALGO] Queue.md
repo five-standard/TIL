@@ -3,8 +3,8 @@
   
   Queue는 스택과 반대되는 개념으로, 먼저 들어온 값이 먼저 나오는 FIFO 형태의 자료 구조이다.  
   대기열을 생각하면 쉽다.  
-  ![](https://img.newspim.com/news/2023/02/01/230201164600129_w.jpg)
-  <span style="color: gray; font-weight: bolder">입장 대기열은 먼저 들어온 사람이 먼저 나간다</span>
+  ![](https://img.newspim.com/news/2023/02/01/230201164600129_w.jpg)  
+  (입장 대기열은 먼저 들어온 사람이 먼저 나간다)
 
   ## Queue의 종류
   - **선형 큐** - 흔히 볼 수 있는 큐로, 단어 그대로 선형으로 된 큐이다.
