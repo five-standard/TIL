@@ -6,7 +6,7 @@
   any에 존재하지 않는 타입 검사를 사용하여 입력값과 출력값의 타입이 동일한지 검증하기 위해서이다.
 
   더 정확히 알기 위해, 아래에 예시를 적어두었다.
-  ```
+  ```js
     //any를 사용한 코드
     function Hello(data: any) : any {
       return data;
@@ -25,7 +25,7 @@
   ```
 
   ## 제네릭 선언
-  ```
+  ```js
     function logText<T>(text: T): T {
       return text;
     }
@@ -34,7 +34,7 @@
   **(참고로 이 T는 다른것으로 바꿀 수 있는데, T가 들어간 부분을 전부 같은 이름으로 바꾸면 된다)**
 
   ## 제네릭 확장
-  ```
+  ```js
     interface Text {
       Numb: number;
     }
@@ -49,7 +49,7 @@
   다만 `<T>`안에 붙여야 한다.
 
   ## 제네릭 인터페이스 / 클래스
-  ```
+  ```js
     interface GenericLogTextFn {
       <T>(text: T): T;
     }
@@ -65,7 +65,7 @@
   **클래스는 이름 오른쪽에 `<T>`를 무조건 붙여야 한다.**
 
   ## 제네릭 타입 제약
-  ```
+  ```js
     function Hello<T>(data: T) : T {
       return data.length;
     }
@@ -73,7 +73,7 @@
   인자의 타입에 선언된 T는 아직 어떤 타입인제 구체적으로 정의하지 않았기 때문에 오류가 발생한다.  
   하지만 **배열 타입을 정의하지 않고, length 속성만은 허용**하려면 **interface**를 사용해야 한다.
 
-  ```
+  ```js
     interface LengthWise {
       length: number;
     }
