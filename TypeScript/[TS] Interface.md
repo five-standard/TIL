@@ -2,7 +2,7 @@
   Interface란 자주 사용하는 타입들을 **object 형태의 묶음**으로 정의해 새로운 타입을 만드는 기능이다.
 
   - ### 선언
-    ```
+    ```js
     interface User {
       name: string;
       age: number;
@@ -12,7 +12,7 @@
   - ### 활용
     활용시 변수, 함수, 클래스 등은 인터페이스의 형태를 준수해야 한다.  
 
-    ```
+    ```js
     interface User {
       name: string;
       age: number;
@@ -26,7 +26,7 @@
     (변수의 타입으로 사용)
 
     ---
-    ```
+    ```js
     interface SquareFunc {
       (num: number): number;
     }
@@ -40,7 +40,7 @@
     (함수의 타입으로 사용. (num:number)는 반환값 부분으로, 이 값이 꼭 반환되야 함)
 
     ---  
-    ```
+    ```js
     interface ITodo {
       id: number;
       content: string;
@@ -62,7 +62,7 @@
     (클래스의 타입으로 사용, 프로퍼티만 포함됨)  
     
     ---
-    ```
+    ```js
     interface IPerson {
       name: string;
       sayHello(): void;
@@ -86,7 +86,7 @@
 
   - ### **상속**
     interface는 **extends**를 사용하여 다른 interface를 상속받을 수 있다. 
-    ```
+    ```js
      interface Person {
        name: string;
        age: number;
@@ -104,7 +104,7 @@
     ```
     
     물론 복수의 인터페이스도 상속받을 수 있다.
-    ```
+    ```js
     interface Person {
       name: string;
       age: number;
@@ -131,7 +131,7 @@
   - ### 선택적 프로퍼티
     만약 프로퍼티가 선택적으로 쓰이는 경우, **프로퍼티의 이름 뒤에 ?를 붙여 선택적 프로퍼티로** 만들 수 있다.
 
-    ```
+    ```js
     interface UserInfo {
       username: string;
       password: string;
@@ -151,7 +151,7 @@
     인터페이스를 구현하는 방법으로 타입 체크를 통과하는 것만 있는 것은 아니다.  
     타입스크립트는 **특정 인터페이스에서 정의한 프로퍼티나 메소드를 가지고 있다면, 그 인터페이스를 구현한 것으로 인정**한다.  
     이를 **덕 타이핑**이라고 한다.
-    ```
+    ```js
     interface IDuck { // 1
       quack(): void;
     }
