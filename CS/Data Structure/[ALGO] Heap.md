@@ -39,8 +39,3 @@
   - **Heap은 무엇인가요?**
   - **Heap으로 구현할 수 있는 것은 무엇이 있을까요?**
   - **Heap으로 우선순위 큐를 구현할 수 있나요?**
-
-  ## 참고 자료
-  - ### <a href="https://velog.io/@yanghl98/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-Heap%ED%9E%99-%EA%B0%9C%EB%85%90-%EC%A2%85%EB%A5%98-%ED%99%9C%EC%9A%A9-%EC%98%88%EC%8B%9C-%EA%B5%AC%ED%98%84">Heap(힙) - 개념, 종류, 활용 예시, 구현</a>
-  - ### <a href="https://velog.io/@kms403/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-Heap%ED%9E%99">힙(Heap)</a>
-  - ### <a href="https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html">힙(Heap)이란</a>
