@@ -18,6 +18,7 @@
 
   - ### Hot Reload
     React Native는 Expo를 통한 고성능의 Hot Reloading을 제공한다.  
+    물론 Expo를 사용하지 않더라도 에뮬레이터를 이용하여 Hot Reloading을 사용할 수 있다.  
     이 Hot Reloading을 통해 개발한 내용을 빠르게 확인 해 볼 수 있다.
 
   ## Expo
