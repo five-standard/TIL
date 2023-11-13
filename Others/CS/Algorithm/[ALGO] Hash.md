@@ -19,6 +19,9 @@
   해시 테이블은 해시 함수를 통해 색인(index)를 버킷(bukket)이나 슬롯(slot)의 배열로 계산한다.  
   ![](https://velog.velcdn.com/images%2Fhanif%2Fpost%2Ffd2841a5-8694-4adc-b3a9-3f6858cd8c0d%2Fimage.png)
 
+  ## 시간 복잡도
+  ![](https://media.discordapp.net/attachments/1089767490537656340/1173532461695766618/image.png?ex=65644c46&is=6551d746&hm=b47a5af726d6e8befa18f6284c7d84a6a56c972e80f97e5d5b55d7ba9c99928a&=&width=720&height=168)
+
   ## Hash의 장/단점
   - ### 장점
     - 중복을 제거할 수 있다.
