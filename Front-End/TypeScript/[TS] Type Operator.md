@@ -15,7 +15,7 @@
   ### 유니온 타입의 장점
   유니온 타입을 사용하면 **여러 타입을 한 변수에 선언할 수 있다는 것**이 제일 큰 장점이다.  
 
-  ```
+  ```js
   // any를 사용하는 경우
   function getAge(age: any) {
     age.toFixe(); // 에러 발생, age의 타입이 any로 추론되기 때문에 숫자 관련된 API를 작성할 때 코드가 자동 완성되지 않는다.
@@ -38,7 +38,7 @@
   하지만 유니온 타입을 사용하면 **해당 타입들에서 사용 가능한 자동완성을 사용할 수 있다.**
 
   ### 주의할 점
-  ```
+  ```js
   interface Person {
     name: string;
     age: number;
@@ -59,7 +59,7 @@
   ## Intersection Type
   인터섹션 타입은 여러 타입을 모두 만족하는 하나의 타입을 의미한다.
 
-  ```
+  ```js
   interface Person {
     name: string;
     age: number;
@@ -73,7 +73,7 @@
   해당 코드는 **Person과 Developer의 타입 정의를 `&`연산자를 이용하여 합친 후, 한 타입에 할당**한 코드이다.
 
   아래와 같은 결과가 나온다
-  ```
+  ```js
   {
     name: string;
     age: number;
