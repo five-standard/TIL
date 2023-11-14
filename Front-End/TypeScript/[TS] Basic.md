@@ -13,15 +13,15 @@
   
   ## 함수 선언
    - **함수 타입 선언**
-   ``` 
-    function add(x: number, y: number //매개변수): number //return 값 {
+   ``` js
+    function add(x: number, y: number /*매개변수*/): number /*리턴 값*/ {
       return x + y;
     }
    ```
 
    - **선택적 매개변수**  
    변수 이름 뒤에 <b>?</b>를 붙여주면 된다.
-   ```
+   ```js
     function buildName(firstName: string, lastName?: string) {
       if (lastName)
         return firstName + " " + lastName;
