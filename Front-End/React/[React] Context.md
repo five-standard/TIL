@@ -8,30 +8,32 @@
 
   ## 사용
   ```js
-  [App.js]
-    import { createContext, useState } from "react";
-    
-    export const Hello = createContext("World"); // 생성, createContext(default)
+  //App.js
+  import { createContext, useState } from "react";
+  
+  export const Hello = createContext("World"); // 생성, createContext(default)
 
-    export const App = () => {
-      const [test, setTest] = useState("6Standard");
+  export const App = () => {
+    const [test, setTest] = useState("6Standard");
 
-      return <Hello.Provider value={test}> {/* 제공, <Context.Provider value> */}
-        <PrintValue />
-      </Hello.Provider>
-    }
+    return <Hello.Provider value={test}> {/* 제공, <Context.Provider value> */}
+      <PrintValue />
+    </Hello.Provider>
+  }
+  ```
+  
+  ```js
+  //Print.js
+  import React from 'react';
+  import { Hello } from '../App';
 
-  [Print.js]
-    import React from 'react';
-    import { Hello } from '../App';
-
-    export const PrintValue = () => {
-      return <Hello.Consumer> {/* 사용, <Context.Consumer> */}
-        {(test => {
-          return <h1>{test}</h1>
-        })}
-      </Hello.Consumer>
-    }
+  export const PrintValue = () => {
+    return <Hello.Consumer> {/* 사용, <Context.Consumer> */}
+      {(test => {
+        return <h1>{test}</h1>
+      })}
+    </Hello.Consumer>
+  }
   ``` 
 
   ## useContext
