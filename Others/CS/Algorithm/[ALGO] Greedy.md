@@ -1,7 +1,7 @@
 # Greedy
   > **최적의 상황만을 쫒는 알고리즘**
 
-  현재 상황에서 제일 좋은 항목을 고르는 자료구조이다.
+  현재 상황에서 제일 좋은 항목을 고르는 알고리즘이다.
   최적해를 구하는 데 사용되는 방법이며, 해답을 만들었다고 해서 그것이 최적이라는 보장은 없다.
   ![](https://blogger.googleusercontent.com/img/a/AVvXsEiSHGKt_H9VDwTamdSRjZUi6XsUXvssm6CMKNpnfeteBJ4bUBnYHDcLXMaxK6R6Xb82G1ft9MB_0WpzBMRVgicuhJPtlsn-RGPK9JdtgTy0gk0sEDAhIqNcYw7dPPWvQou4Vh5WxmVdlhM5nCHaD_N0rcJABOB5kffuEYPFecJbSY7AlxrNW-2YXHBkFw=s16000)  
   (그리디 알고리즘의 답보다 더 좋은 답이 존재하는 경우도 있다)
