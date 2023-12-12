@@ -1,7 +1,8 @@
 # Graph Search
   > **한 정점에서부터 모든 정점들을 한 번씩 방문하는 탐색**
 
-  그래프 탐색이란 위 설명처럼 한 정점에서부터 모든 정점들을 한 번씩 방문하는 탐색이다.
+  ![](http://tinyurl.com/mr2h7duc)
+  그래프 탐색이란 위 설명처럼 한 정점에서부터 모든 정점들을 한 번씩 방문하는 탐색이다.  
   종류로는 DFS, BFS 등이 있다.
 
   ## DFS
@@ -30,16 +31,20 @@
     [7], 
     [2, 6, 8], 
     [1, 7]
-  ]
+  ] 
+  /* 각각 0, 1, 2, 3과 연결된 값들을 의미한다.
+  [2, 3, 8]은 1과 연결된 값들을 의미한다. */
 
-  check = [false, false, false, false, false, false, false, false, false];
+  check = [];
+  for(i in graph) check.push(false);
+  // 특정 값을 조사했는지 아닌지 판별할 때 쓰이는 배열이다.
 
   function checkGraph(i) {
-    if(check[i]) { return; }
-    process.stdout.write(i + "");
+    if(check[i]) { return; } // 조사 여부가 false라면 return한다.
+    process.stdout.write(i + ""); // 텍스트를 한 줄에 출력한다. console.log와 다르다.
     check[i] = true;
     for(let n of graph[i]) {
-      checkGraph(n);
+      checkGraph(n); // 해당 배열에 들어있는 값들에 대한 재귀 함수를 실행한다.
     }
   }
 
