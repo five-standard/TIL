@@ -17,3 +17,22 @@
 
 - **파일 삭제**  
   🗑️ [**(tag)**] **(title)**
+
+## 태그 형식
+
+**[(Major)-(Minor)]**
+
+## Major 태그
+
+A - Algorithm  
+F - Front-End  
+G - Git  
+L - Language  
+N - Network  
+W - Web  
+O - Others (File)
+
+## Minor 태그
+
+부모 폴더 이름중 일부
+(ex. NextJS = NE, Styling = ST, React = RE)
