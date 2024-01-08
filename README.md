@@ -20,19 +20,19 @@
 
 ## 태그 형식
 
-**[(Major)-(Minor)]**
+**[(Major)]** (Minor 태그가 없을 경우)  
+**[(Major)-(Minor)]** (Minor 태그가 있을 경우)
 
-## Major 태그
+### Major 태그
 
-A - Algorithm  
-F - Front-End  
-G - Git  
-L - Language  
-N - Network  
-W - Web  
-O - Others (File)
+- A - Algorithm
+- F - Front-End
+- G - Git
+- L - Language
+- N - Network
+- W - Web
+- O - Others (File)
 
-## Minor 태그
+### Minor 태그
 
-부모 폴더 이름중 일부
-(ex. NextJS = NE, Styling = ST, React = RE)
+- 부모 폴더 이름중 일부 (ex. NextJS = NE, Styling = ST, React = RE)
