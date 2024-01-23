@@ -41,19 +41,21 @@ return (
 ```js
 const Tab = createBottomTabNavigator();
 
-<NavigationContainer>
-  <Tab.Navigator
-    initialRouteName="First" // 첫 화면을 설정하는 옵션이다.
-    screenOptions={{ headerShown: false }} // 기본 헤더를 숨기는 옵션이다.
-  >
-    <Stack.Screen
-      name="First"
-      component={First}
-      tabBarIcon={() => <TabIcons name="Heart" />} // 탭바의 아이콘을 설정하는 옵션이다.
-    />
-    <Stack.Screen name="Second" component={Second} />
-  </Tab.Navigator>
-</NavigationContainer>;
+return (
+  <NavigationContainer>
+    <Tab.Navigator
+      initialRouteName="First" // 첫 화면을 설정하는 옵션이다.
+      screenOptions={{ headerShown: false }} // 기본 헤더를 숨기는 옵션이다.
+    >
+      <Stack.Screen
+        name="First"
+        component={First}
+        tabBarIcon={() => <TabIcons name="Heart" />} // 탭바의 아이콘을 설정하는 옵션이다.
+      />
+      <Stack.Screen name="Second" component={Second} />
+    </Tab.Navigator>
+  </NavigationContainer>
+);
 ```
 
 ## Drawer Navigation
@@ -61,3 +63,44 @@ const Tab = createBottomTabNavigator();
 ![](https://lh3.googleusercontent.com/W4QDMYeNtcm37g2JfKKj5lv8rJ6KGLb9vZdYUNEpjixpHDjjQ_hPrwnj5Ruo1ZYHyukHLRQCtXrzQV6gLzRSNE-w60QYjFcUZZ_2=w1064-v0)
 아직 사용은 못해봤으나, 옆에서 나오는 네비게이션 바를 이용한 Navigation이다.  
  유튜브 웹의 오른쪽에 있는 네비게이션 바를 생각하면 편하다.
+
+## Nested Navigation
+
+네비게이션 안에 네비게이션을 넣고싶다면 (Stack 안에 TabBar 넣기 등) Nested Navigation을 이용하여 만들 수 있다.
+
+```js
+const Tab = () => {
+  const Tab = createBottomTabNavigator();
+
+  return (
+    // 하위 네비게이션에서 NavigationContainer로 감싸면 오류가 발생한다.
+    <Tab.Navigator
+      initialRouteName="First" // 첫 화면을 설정하는 옵션이다.
+      screenOptions={{ headerShown: false }} // 기본 헤더를 숨기는 옵션이다.
+    >
+      <Stack.Screen
+        name="First"
+        component={First}
+        tabBarIcon={() => <TabIcons name="Heart" />} // 탭바의 아이콘을 설정하는 옵션이다.
+      />
+      <Stack.Screen name="Second" component={Second} />
+    </Tab.Navigator>
+  );
+};
+
+const Stack = () => {
+  const Stack = createNativeStackNavigator();
+
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="First" // 첫 화면을 설정하는 옵션이다.
+        screenOptions={{ headerShown: false }} // 기본 헤더를 숨기는 옵션이다.
+      >
+        <Stack.Screen name="First" component={First} />
+        <Stack.Screen name="Tabs" component={Tab} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+```
